@@ -1,0 +1,35 @@
+<h3>Ember Test: Acceptance test</h3>
+<p>
+    QUnit JavaScript test framework to run tests
+</p>
+<ol>
+    <li>
+        ember g acceptance-test test-name
+    </li>
+    <li>
+        Check tests/acceptance/test-name
+    </li>
+    <li>
+        ember test --server
+    </li>
+</ol>
+<div>
+    <p><strong>Note:</strong></p>
+    <div>
+        <img src="/assets/images/route-redirect.png" />
+        <p>- "visit" loads a given URL and check if the root URl gets redirected to "/about"</p>
+        <p>- "assert.equal() to check if the first and second arguments equal each other. If they don't, our test
+            will fail.</p>
+    </div>
+    <div>
+        <img src="assets/images/route-link.png" />
+        <p>- "click" pretends to be a user clicking on a specific part of the screen(e.g. #menu-route)</p>
+    </div>
+    <div>
+        <img src="assets/images/querySelectorAll.png" />
+        <p>
+            - "querySelectorAll" method returns the elements that match the given CSS selector. In this case it will
+            return an array of all the elements with a class called listing.
+        </p>
+    </div>
+</div>

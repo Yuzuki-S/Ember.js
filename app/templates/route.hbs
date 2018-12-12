@@ -1,0 +1,22 @@
+<h3>Define a Route</h3>
+<div>
+    <ul>
+        <li>ember generate route route-name</li>
+    </ul>
+    <p>
+        Open <a href="http://localhost:4200/route-name">http://localhost:4200/route-name</a>
+    </p>
+</div>
+<h3>An Index Route:Root URL </h3>
+<p> Forwarding the index route to anouther route</p>
+<ul>
+    <li>
+        In the index route handler, we add the <strong>replaceWith</strong> invocation to beforeModel.
+    </li>
+    <img src="/assets/images/index.png">
+</ul>
+<h4>Note: </h4>
+<p>
+    The beforeModel hook gets executed before the data gets fetched from the model hook, and before the page is
+    rendered.
+</p>

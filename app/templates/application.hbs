@@ -1,5 +1,30 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Ember.js Tutorial</h1>
+<div>
+    {{#link-to "about" class="button" id="menu-about"}}
+    About
+    {{/link-to}}
 
-{{outlet}}
+    {{#link-to "get-started" class="button" id="menu-get-started"}}
+    Get Started
+    {{/link-to}}
+
+    {{#link-to "route" class="button" id="menu-route"}}
+    Route
+    {{/link-to}}
+
+    {{#link-to "test" class="button"}}
+    Test
+    {{/link-to}}
+    {{#link-to "data" class="button"}}
+    Data
+    {{/link-to}}
+    {{#link-to "css" class="button"}}
+    CSS
+    {{/link-to}}
+</div>
+<div>
+    <img src="https://i1.wp.com/opensourceforu.com/wp-content/uploads/2017/03/ember-js-1.png?w=690&ssl=1" />
+</div>
+<div>
+    {{outlet}}
+</div>

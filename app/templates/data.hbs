@@ -1,0 +1,22 @@
+<h3>The Best Lunch Spots Around Alphero</h3>
+
+{{#each model as |restaurant|}}
+<article class="listing">
+    <a class="image {{if isWide "wide"}}" role="button">
+        <img src="{{restaurant.image}}" alt="No Image">
+        <small>View Larger</small>
+    </a>
+    <div class="details">
+        <h3>{{restaurant.title}}</h3>
+        <div class="detail range">
+            <span><strong>$:</strong></span> {{restaurant.range}}
+        </div>
+        <div class="detail location">
+            <span><strong>Location:</strong></span> {{restaurant.street}}
+        </div>
+        <div class="detail distance">
+            <span><strong>Distance:</strong></span> {{restaurant.distance}}
+        </div>
+    </div>
+</article>
+{{/each}}
